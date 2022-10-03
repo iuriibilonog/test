@@ -1,0 +1,33 @@
+.footer {
+  background-color: var(--main-color);
+}
+
+.footerText {
+
+  padding: 15px 24px 15px 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .footerText {
+    padding: 9px auto 9px auto;
+    font-weight: 500;
+      font-size: 8px;
+      line-height: 12px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footerText {
+      padding: 12px auto 12px auto;
+      font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

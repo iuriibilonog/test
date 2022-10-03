@@ -1,0 +1,66 @@
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  
+}
+
+.bgImg {
+  width: 100%;
+  height: calc(100vh/2);
+  background-image: url('../../images/welcomeBgMob.png');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  
+}
+
+.burger {
+  position: absolute;
+  top: 35px;
+  right: 33px;
+  width: 15px;
+}
+
+.bigLogoDesk {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 203px;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .bgImg {
+      width: calc(100%/2);
+      height: 100%;
+      background-image: url('../../images/WelcomeScreen1.png');
+      
+      margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+  .bigLogoDesk {
+      display: block;
+      width: calc(100%/4);
+      position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+  
+    .logo {
+      display: none;
+    }
+
+        .burger {
+          width: 25px;
+        }
+}
