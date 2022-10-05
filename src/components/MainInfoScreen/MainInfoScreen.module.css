@@ -1,3 +1,9 @@
+.mainInfoWrapper {
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
 .title {
   margin-top: 50px;
   text-align: center;
@@ -24,8 +30,17 @@
   color: #011539;
 }
 
+.burger {
+  position: absolute;
+  top: 35px;
+  right: 33px;
+  width: 15px;
+  cursor: pointer;
+}
+
 .mainList {
   margin-top: 50px;
+  
 }
 
 .independentTabTextWrapper,
@@ -117,6 +132,7 @@
     font-size: 18px;
     line-height: 27px;
     /* identical to box height */
+    flex-grow: 2;
 
     letter-spacing: 0.03em;
     /* height: calc(100vh - 366px); */
@@ -186,9 +202,9 @@
     padding-top: 10px;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: 250;
+    font-size: 12px;
+    line-height: 18px;
     color: white;
     letter-spacing: 0;
   }
@@ -224,6 +240,8 @@
 
     letter-spacing: 0.12em;
     /* height: calc(100vh - 426px); */
+  
+    
   }
 
   .listItemTitle {
@@ -273,4 +291,8 @@
     font-size: 16px;
     line-height: 200%;
   }
+
+    .burger {
+      width: 25px;
+    }
 }

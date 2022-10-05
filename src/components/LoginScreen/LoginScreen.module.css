@@ -1,5 +1,6 @@
 .bgMain {
-  height: 100%;
+  position: relative;
+  height: 100vh;
   background-image: url('../../images/bgLoginMob.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,7 +8,13 @@
 .bgLoginTab {
   display: none;
 }
-
+.burger {
+  position: absolute;
+  top: 35px;
+  right: 33px;
+  width: 15px;
+  cursor: pointer;
+}
 
 .logoRectangle {
   padding-top: 190px;
@@ -83,7 +90,7 @@
  
   margin-left: 50%;
   transform: translateX(-50%);
-  padding-bottom: 205px;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -91,6 +98,7 @@
     background-image: url('../../images/bgLoginTab.png');
     background-size: cover;
     background-position: center;
+    height: 100vh;
     /* width: 100%; */
   }
 
@@ -187,4 +195,8 @@
        .loginInput:not(:last-child) {
                   margin-bottom: 18px;
                 }
+
+                 .burger {
+          width: 25px;
+        }
 }

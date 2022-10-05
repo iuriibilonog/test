@@ -1,17 +1,25 @@
-import s from './LoginScreen.module.css';
-import logoRectangle from './../../images/logoRectangle.png';
-import { useState } from 'react';
+import s from "./LoginScreen.module.css";
+import burger from "./../../images/burger.png";
+import logoRectangle from "./../../images/logoRectangle.png";
+import Footer from "../Footer";
+import Menu from "./../Menu";
+import { useState } from "react";
 
 const LoginScreen = () => {
-  const [login, setLogin] = useState('');
-  const [password, setPassword] = useState('');
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+  const [isShowMenu, setIsShowMenu] = useState(false);
 
-  const handleOnChange = e => {
+  const handleOnClick = () => {
+    setIsShowMenu(!isShowMenu);
+  };
+
+  const handleOnChange = (e) => {
     switch (e.target.name) {
-      case 'username':
+      case "username":
         setLogin(e.target.value);
         break;
-      case 'password':
+      case "password":
         setPassword(e.target.value);
         break;
 
@@ -20,14 +28,15 @@ const LoginScreen = () => {
     }
   };
 
-  const handleOnSubmit = e => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
-    setLogin('');
-    setPassword('');
+    setLogin("");
+    setPassword("");
   };
 
   return (
     <div className={s.bgMain}>
+      <img src={burger} alt="" className={s.burger} onClick={handleOnClick} />
       <div className={s.loginWrapper}>
         <img src={logoRectangle} alt="" className={s.logoRectangle} />
         <form className={s.loginForm} onSubmit={handleOnSubmit}>
@@ -55,6 +64,8 @@ const LoginScreen = () => {
           info@louvrewealth.com
         </a>
       </div>
+      <Menu isShow={isShowMenu} setIsShow={setIsShowMenu} />
+      <Footer />
     </div>
   );
 };
