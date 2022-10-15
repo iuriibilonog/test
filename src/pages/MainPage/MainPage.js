@@ -11,7 +11,7 @@ const MainPage = () => {
       <MainInfoScreen />
       <SeparateBlock />
       <LoginScreen />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

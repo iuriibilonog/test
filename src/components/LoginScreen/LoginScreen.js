@@ -9,7 +9,7 @@ const LoginScreen = () => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [isShowMenu, setIsShowMenu] = useState(false);
-  const [error, setError] = useState({});
+  const [error, setError] = useState("");
 
   // const handleOnClick = () => {
   //   setIsShowMenu(!isShowMenu);
@@ -64,16 +64,14 @@ const LoginScreen = () => {
             </button>
           </form>
 
-          {Object.keys(error).length && (
-            <div className={s.error}>{error.message}</div>
-          )}
+          {error && <div className={s.error}>{error}</div>}
         </div>
         <a href="mailto:info@louvrewealth.com" className={s.mail}>
           info@louvrewealth.com
         </a>
       </div>
       {/* <Menu isShow={isShowMenu} setIsShow={setIsShowMenu} /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
