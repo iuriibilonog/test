@@ -1,5 +1,6 @@
 .wrapper {
   position: fixed;
+  z-index: 10000;
   top: 0;
   right: 0;
   width: 100%;
@@ -39,6 +40,7 @@
   letter-spacing: 0.03em;
   color: var(--main-color);
   transition: transform .4s ease-in;
+  cursor: pointer;
 }
 
 .menuListItemTitle:hover {

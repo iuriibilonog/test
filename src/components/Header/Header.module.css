@@ -1,0 +1,25 @@
+
+
+.burger {
+  position: fixed;
+  top: 35px;
+  right: 33px;
+  width: 15px;
+  cursor: pointer;
+  z-index: 10000;
+  
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1280px) {
+ 
+  .burger {
+    width: 25px;
+  }
+}

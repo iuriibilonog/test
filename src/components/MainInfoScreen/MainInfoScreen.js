@@ -58,13 +58,13 @@ const MainInfoScreen = () => {
   };
 
   return (
-    <div className={s.mainInfoWrapper}>
-      <img
+    <div className={s.mainInfoWrapper} id="home">
+      {/* <img
         src={burger}
         alt=""
         className={s.burger}
         onClick={handleOnClickBurger}
-      />
+      /> */}
       <div className={s.titleInfoWrapper}>
         <h3 className={s.title}>WELCOME</h3>
         <p className={s.mainText}>

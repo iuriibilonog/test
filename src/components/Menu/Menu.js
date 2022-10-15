@@ -18,6 +18,29 @@ const Menu = ({ isShow, setIsShow }) => {
     }
   };
 
+  const handleScrollTo = (section) => {
+    switch (section) {
+      case "welcome":
+        const targetWelcome = document.querySelector("#welcome");
+        targetWelcome.scrollIntoView({ behavior: "smooth", block: "start" });
+        setIsShow(false);
+        break;
+      case "home":
+        const targetHome = document.querySelector("#home");
+        targetHome.scrollIntoView({ behavior: "smooth", block: "start" });
+        setIsShow(false);
+        break;
+      case "login":
+        const targetLogin = document.querySelector("#login");
+        targetLogin.scrollIntoView({ behavior: "smooth", block: "start" });
+        setIsShow(false);
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
     isShow && (
       <div
@@ -38,20 +61,29 @@ const Menu = ({ isShow, setIsShow }) => {
           />
           <img src={logoRectangle} alt="" className={s.logoRectangle} />
           <ul className={s.menuList}>
-            <li className={s.menuListItem}>
-              <Link to="/welcome">
-                <span className={s.menuListItemTitle}>Welcome</span>
-              </Link>
+            <li
+              className={s.menuListItem}
+              onClick={() => handleScrollTo("welcome")}
+            >
+              {/* <Link to="/welcome"> */}
+              <span className={s.menuListItemTitle}>Welcome</span>
+              {/* </Link> */}
             </li>
-            <li className={s.menuListItem}>
-              <Link to="/home">
-                <span className={s.menuListItemTitle}>Home</span>
-              </Link>
+            <li
+              className={s.menuListItem}
+              onClick={() => handleScrollTo("home")}
+            >
+              {/* <Link to="/home"> */}
+              <span className={s.menuListItemTitle}>Home</span>
+              {/* </Link> */}
             </li>
-            <li className={s.menuListItem}>
-              <Link to="/login">
-                <span className={s.menuListItemTitle}>Login</span>
-              </Link>
+            <li
+              className={s.menuListItem}
+              onClick={() => handleScrollTo("login")}
+            >
+              {/* <Link to="/login"> */}
+              <span className={s.menuListItemTitle}>Login</span>
+              {/* </Link> */}
             </li>
           </ul>
           <a href="mailto:info@louvrewealth.com" className={s.mail}>

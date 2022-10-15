@@ -8,10 +8,10 @@ const MainPage = () => {
   return (
     <>
       <WelcomeScreen />
-      {/* <MainInfoScreen />
+      <MainInfoScreen />
       <SeparateBlock />
       <LoginScreen />
-      <Footer /> */}
+      {/* <Footer /> */}
     </>
   );
 };

@@ -13,12 +13,12 @@ const WelcomeScreen = () => {
   };
 
   return (
-    <div className={s.main}>
-      <img src={burger} alt="" className={s.burger} onClick={handleOnClick} />
+    <div className={s.main} id="welcome">
+      {/* <img src={burger} alt="" className={s.burger} onClick={handleOnClick} /> */}
       <img src={logo} alt="" className={s.logo} />
       <img src={bigLogoDesc} alt="" className={s.bigLogoDesk} />
       <div className={s.bgImg}></div>
-      <Menu isShow={isShowMenu} setIsShow={setIsShowMenu} />
+      {/* <Menu isShow={isShowMenu} setIsShow={setIsShowMenu} /> */}
     </div>
   );
 };
