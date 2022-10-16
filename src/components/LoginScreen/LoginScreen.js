@@ -16,6 +16,7 @@ const LoginScreen = () => {
   // };
 
   const handleOnChange = (e) => {
+    setError("");
     switch (e.target.name) {
       case "username":
         setLogin(e.target.value);
@@ -33,7 +34,7 @@ const LoginScreen = () => {
     e.preventDefault();
     setLogin("");
     setPassword("");
-    setError("Wrong login or password!");
+    setError("Wrong username or password!");
   };
 
   return (

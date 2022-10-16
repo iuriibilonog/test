@@ -63,7 +63,7 @@ const Menu = ({ isShow, setIsShow }) => {
           <ul className={s.menuList}>
             <li
               className={s.menuListItem}
-              onClick={() => handleScrollTo("home")}
+              onClick={() => handleScrollTo("welcome")}
             >
               {/* <Link to="/home"> */}
               <span className={s.menuListItemTitle}>Home</span>
@@ -71,7 +71,7 @@ const Menu = ({ isShow, setIsShow }) => {
             </li>
             <li
               className={s.menuListItem}
-              onClick={() => handleScrollTo("welcome")}
+              onClick={() => handleScrollTo("home")}
             >
               {/* <Link to="/welcome"> */}
               <span className={s.menuListItemTitle}>Welcome</span>
