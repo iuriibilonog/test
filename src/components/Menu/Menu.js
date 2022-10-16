@@ -63,18 +63,18 @@ const Menu = ({ isShow, setIsShow }) => {
           <ul className={s.menuList}>
             <li
               className={s.menuListItem}
-              onClick={() => handleScrollTo("welcome")}
-            >
-              {/* <Link to="/welcome"> */}
-              <span className={s.menuListItemTitle}>Welcome</span>
-              {/* </Link> */}
-            </li>
-            <li
-              className={s.menuListItem}
               onClick={() => handleScrollTo("home")}
             >
               {/* <Link to="/home"> */}
               <span className={s.menuListItemTitle}>Home</span>
+              {/* </Link> */}
+            </li>
+            <li
+              className={s.menuListItem}
+              onClick={() => handleScrollTo("welcome")}
+            >
+              {/* <Link to="/welcome"> */}
+              <span className={s.menuListItemTitle}>Welcome</span>
               {/* </Link> */}
             </li>
             <li

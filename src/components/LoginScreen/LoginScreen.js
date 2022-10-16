@@ -33,7 +33,7 @@ const LoginScreen = () => {
     e.preventDefault();
     setLogin("");
     setPassword("");
-    setError({ message: "Wrong login or password!" });
+    setError("Wrong login or password!");
   };
 
   return (
