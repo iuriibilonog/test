@@ -113,6 +113,7 @@ flex-direction: column;
   font-size: 16px;
   line-height: 24px;
   color: white;
+
 }
 
 .listItemTitle {
@@ -124,6 +125,8 @@ flex-direction: column;
     letter-spacing: 0.03em;
 }
 
+
+
 @media screen and (min-width: 768px) {
 
   .mainInfoWrapper {
@@ -131,6 +134,10 @@ flex-direction: column;
   
     }
 
+
+        /* .titleInfoWrapper {
+      height: calc(100vh / 2);
+    } */
 
 
   .mainList {
@@ -144,13 +151,16 @@ flex-direction: column;
     flex-grow: 2;
 
     letter-spacing: 0.03em;
-    /* height: calc(100vh - 366px); */
+    
+    min-height: calc(100vh - 366px);
   }
+
 
   .secure {
     background-image: url('./../../images/secureTab.png');
     width: calc(100vw / 4);
     padding: 20px 55px 269px 16px;
+    
   }
 
   .independent {
@@ -179,6 +189,7 @@ flex-direction: column;
     background-image: none;
     background-color: var(--main-bg-color);
     padding: 20px 15px 0px 16px;
+    overflow-y: auto;
   }
 
   .independent:hover > .listItemTitle, .secure:hover > .listItemTitle,
@@ -192,6 +203,7 @@ flex-direction: column;
   .transparent:hover > .transparentTabTextWrapper,
   .experienced:hover > .experiencedTabTextWrapper {
     display: block;
+    
   }
 
   .textTitleForTab {
@@ -216,6 +228,7 @@ flex-direction: column;
     line-height: 18px;
     color: white;
     letter-spacing: 0;
+    overflow-y: auto;
   }
 }
 
@@ -248,7 +261,7 @@ flex-direction: column;
     /* identical to box height */
 
     letter-spacing: 0.12em;
-    /* height: calc(100vh - 426px); */
+    /* min-height: calc(100vh - 426px); */
   
     
   }

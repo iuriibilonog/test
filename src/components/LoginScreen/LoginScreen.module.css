@@ -4,6 +4,7 @@
   background-image: url('../../images/bgLoginMob.png');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .bgLoginTab {
   display: none;

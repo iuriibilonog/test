@@ -9,9 +9,9 @@ const MainPage = () => {
     <>
       <WelcomeScreen />
       <MainInfoScreen />
-      <SeparateBlock />
+      {/* <SeparateBlock /> */}
       <LoginScreen />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
